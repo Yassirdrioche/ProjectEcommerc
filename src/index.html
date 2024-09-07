@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <style>
+    .div-toggled {
+      display: none;
+    }
+  </style>
+  <body>
+    <h1 class="font-bold underline text-gray-500">Hello world</h1>
+    <body>
+      <input type="checkbox" id="mycheckbox" />
+      <label for="mycheckbox">Click me</label>
+      <div
+        class="container p-7 w-[2rem] font-sans cursor-pointer bg-blue-400 hover:bg-black hover:text-white flex justify-center items-center m-4 text-[2rem] h-8"
+      >
+        DIV
+      </div>
+      <div class="div-toggled" id="toggled">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>User</li>
+            <li>ABOUT</li>
+          </ul>
+        </nav>
+      </div>
+      <button class="toggle" id="toggle">Hide</button>
+      <script>
+let button =document.getElementById("toggle");
+let div =document.getElementById("toogled");
+button.addEventListener("click",() => {
+  div.classList.toggle("div-toggled")
+})
+      </script>
+    </body>
+
+</html>
