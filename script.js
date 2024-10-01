@@ -40,3 +40,4 @@ function toggle() {
 goTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+const yassir = 10;
